@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/gaseguraj/ms1-spring-cloud-environment-variable.git
+
+server:
+  port: ${port:8888}
