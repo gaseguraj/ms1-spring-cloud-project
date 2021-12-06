@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ms1-property-access-cloud-service
+  config:
+    import: "optional:configserver:"
+server:
+  port: ${port:8100}
+
+
